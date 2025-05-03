@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="assets/images/icone.ico">
+ 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&displayB=swap" rel="stylesheet"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+
+    <title>Óticas VITZ</title>
+    
+</head>
+<body>
+    <div id="progress-bar"></div>
+    <header class="site-header">
+        <div class="header-container">
+          <img src="assets/images/logo.png" alt="Óticas VITZ" class="logo">
+          <div class="header-text">
+            <h1>Óticas VITZ</h1>
+            <p>Sua parceira em saúde visual para empresas</p>
+          </div>
+        </div>
+      </header>
+      
+  
+    <section class="banner">
+        <div class="banner-content">
+          <h1>LEVE SAÚDE PARA SUA EMPRESA</h1>
+          <p>Sem taxas! Exames gratuitos e descontos exclusivos</p>
+          <p class="destaque">Vagas limitadas para atendimentos empresariais em 2025!</p>
+          <a href="#planos" class="button">Conheça os Planos</a>
+        </div>
+      </section>
+      
+  
+    <section id="planos">
+      <h2>Planos Disponíveis</h2>
+      <div class="cards">
+        <div class="card" data-aos="fade-up">
+          <h3><i class="fas fa-briefcase-medical"></i> Plano SIPAT</h3>
+          <p>Equipe vai até sua empresa, exames gratuitos, palestra gratuita, até 80% de economia.</p>
+          <a href="#contato" class="button">Saiba Mais</a>
+        </div>
+        <div class="card" data-aos="fade-up">
+          <h3><i class="fas fa-building"></i> Plano Empresarial</h3>
+          <p>Exames gratuitos, armações gratuitas na compra das lentes, economia para todos.</p>
+          <a href="#contato" class="button">Saiba Mais</a>
+        </div>
+        <div class="card" data-aos="fade-up">
+          <h3><i class="fas fa-glasses"></i> Plano Fornecedor</h3>
+          <p>Óculos de segurança com ou sem grau, preços imbatíveis para sua empresa.</p>
+          <a href="#contato" class="button">Saiba Mais</a>
+        </div>
+      </div>
+    </section>
+  
+    <section class="benefits">
+      <h2>Benefícios para sua empresa</h2>
+      <div class="benefits-grid">
+        <div class="benefit"><i class="fas fa-chart-line"></i> Maior produtividade</div>
+        <div class="benefit"><i class="fas fa-shield-alt"></i> Prevenção de acidentes</div>
+        <div class="benefit"><i class="fas fa-head-side-virus"></i> Redução de dores de cabeça</div>
+        <div class="benefit"><i class="fas fa-heartbeat"></i> Melhora da qualidade de vida</div>
+      </div>
+    </section>
+  
+    <section class="benefits">
+      <h2>Benefícios para o colaborador</h2>
+      <div class="benefits-grid">
+        <div class="benefit"><i class="fas fa-wallet"></i> Acessibilidade a baixo custo</div>
+        <div class="benefit"><i class="fas fa-credit-card"></i> Pagamento facilitado</div>
+        <div class="benefit"><i class="fas fa-map-marker-alt"></i> Atendimento no local</div>
+        <div class="benefit"><i class="fas fa-user-friends"></i> Garantia estendida e descontos para familiares</div>
+      </div>
+    </section>
+  
+    <section id="contato">
+      <h2>Entre em Contato</h2>
+      <p>Quer levar saúde visual para sua empresa? Fale com nossa equipe ou preencha o formulário.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="https://wa.me/5511945497530" target="_blank" class="button">
+            <i class="fab fa-whatsapp"></i> Conversar pelo WhatsApp
+          </a>
+          <a href="mailto:contato@oticasvitz.com" class="button">
+            <i class="fas fa-envelope"></i> Enviar um E-mail
+          </a>
+          <p><i class="fas fa-phone"></i> (11) 99942-5629</p>
+          <p><strong>Atendimento de segunda a sexta, das 9h às 18h.</strong></p>
+        </div>
+        <form  method="POST" class="contact-form">
+          <input type="text" name="nome" placeholder="Seu nome" required>
+          <input type="email" name="email" placeholder="Seu e-mail" required>
+          <input type="text" name="empresa" placeholder="Nome da empresa" required>
+          <textarea name="mensagem" placeholder="Mensagem ou dúvida" rows="4"></textarea>
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+  
+    <footer>
+      &copy; 2025 Óticas VITZ. Todos os direitos reservados.
+    </footer>
+  
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+  
+      window.onscroll = function () {
+        const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+        document.getElementById('progress-bar').style.width = scrolled + "%";
+      };
+      document.getElementById('contactForm').setAttribute('action', FORMSPREE_ENDPOINT);
+
+    </script>
+  </body>
+</html>

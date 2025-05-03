@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: #4EBDA6;
+    width: 0%;
+    z-index: 9999;
+  }
+
+section,
+footer {
+
+    margin: auto;
+    padding: 20px;
+}
+section {
+    padding: 60px 20px;
+}
+.site-header {
+    background-color: #1C3F60;
+    color: white;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .logo {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  .header-text h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .header-text p {
+    font-size: 1.1em;
+    margin: 5px 0 0;
+    color: #d0e8f2;
+  }
+  
+.banner {
+
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .banner h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  }
+  
+  .banner p {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  }
+  
+  .banner .destaque {
+    font-size: 1.2em;
+    font-weight: bold;
+    color:  #bda809;
+    margin-top: 20px;
+  }
+  
+ 
+  
+    .card h3 i {
+    margin-right: 8px;
+    color: #4EBDA6;
+}
+#planos{
+    background-color: #1C3F60;  
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
+    border: 1px solid #ddd;
+}
+
+.card:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    background-color: #f0f0f0; 
+    border: 2px solid #4EBDA6;
+}
+.benefit i {
+    margin-right: 10px;
+    color: #FFD700; 
+    font-size: 1.2em;
+}
+
+
+
+.card h3 {
+    color: #1C3F60;
+}
+
+.benefits {
+  
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.benefits h2 {
+    margin-bottom: 20px;
+}
+
+.benefits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.benefit {
+    width: 250px;
+    height:  30px;
+    margin: 10px;
+    background: #2E5C85;
+    
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.benefit:hover {
+    background: #3E7CA6;
+    transition: all 0.3s ease;
+}
+
+footer {
+    background-color: #2E5C85;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+a.button {
+    background: linear-gradient(90deg, #6ED6C1, #4EBDA6);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-weight: 600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+a.button, button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4EBDA6;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  a.button:hover, button:hover {
+    background-color: #3ca894;
+  }
+  
+a.button:hover {
+    background: #FF8360;
+    color: white;
+    transition: all 0.3s ease;
+} #contato, #contato h2 {
+    background: #1C3F60;
+    color: white;
+    
+  }
+
+  .contact-grid {
+    display: flex;
+    background-color: re;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .contact-info, .contact-form {
+ 
+    box-sizing: border-box; 
+   
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    
+    box-sizing: border-box; 
+  }
+  
+  .contact-form button {
+    background: #4EBDA6;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    box-sizing: border-box; 
+  }
+
+  .contact-form button:hover {
+    background-color: #6ED6C1;
+  }
+section h2 {
+    text-align: center;
+    color: #1C3F60; 
+    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Faz os cards aparecerem de baixo para cima */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    .cards, .benefits-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}
