@@ -92,7 +92,7 @@
           <p><i class="fas fa-phone"></i> (11) 99942-5629</p>
           <p><strong>Atendimento de segunda a sexta, das 9h às 18h.</strong></p>
         </div>
-        <form id="contactForm" method="POST" class="contact-form">
+        <form method="POST" action="https://formspree.io/f/mzzreglz" class="contact-form">
           <input type="text" name="nome" placeholder="Seu nome" required>
           <input type="email" name="email" placeholder="Seu e-mail" required>
           <input type="text" name="empresa" placeholder="Nome da empresa" required>
@@ -115,7 +115,7 @@
         const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
         document.getElementById('progress-bar').style.width = scrolled + "%";
       };
-      document.getElementById('contactForm').setAttribute('action', FORMSPREE_ENDPOINT);
+     
 
     </script>
   </body>
